@@ -1,0 +1,406 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><title>CS:GO Autoexec: How to Create CFG File - Hellcase Blog</title><meta name="description" content="Counter-Strike:Global Offensive is considered one of the most detailed shooters in terms of mechanics and physics. It has quite a few options that allow the player to customize the game for themselves. This article will focus on the config and Autoex"/><meta name="next-head-count" content="4"/><link rel="preload" href="/_next/static/css/a035c95cdded0921.css" as="style" crossorigin=""/><link rel="stylesheet" href="/_next/static/css/a035c95cdded0921.css" crossorigin="" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" crossorigin="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-04b81472f636c010.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/framework-0c7baedefba6b077.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/main-19ab356b5a7fb71e.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/pages/_app-69603a25880f71b6.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/pages/%5Buri%5D-35e917035016e978.js" defer="" crossorigin=""></script><script src="/_next/static/DNTyj3mo_aArktfODZZeM/_buildManifest.js" defer="" crossorigin=""></script><script src="/_next/static/DNTyj3mo_aArktfODZZeM/_ssgManifest.js" defer="" crossorigin=""></script></head><body><div id="__next"><div class="sticky top-0 w-full z-50"><nav class="flex-no-wrap relative flex w-full items-center justify-between bg-neutral-100 py-4 shadow-md shadow-black/5 dark:bg-neutral-600 dark:shadow-black/10 lg:flex-wrap lg:justify-start" data-te-navbar-ref="true"><div class="flex w-full flex-wrap items-center justify-between px-6"><button class="block border-0 bg-transparent py-2 px-2.5 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden" type="button" data-te-collapse-init="true" data-te-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="[&amp;&gt;svg]:w-7"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7"><path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd"></path></svg></span></button><div class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto" id="navbarSupportedContent1" data-te-collapse-item="true"><a class="mt-2 mr-2 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mt-0" href="#"></a><ul class="list-style-none mr-auto flex flex-col pl-0 lg:flex-row" data-te-navbar-nav-ref="true"><li class="lg:pr-2"><a class="text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&amp;.active]:text-black/90 dark:[&amp;.active]:text-zinc-400" title="Home page" href="/">Home</a></li><li class="lg:pr-2"><a class="text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&amp;.active]:text-black/90 dark:[&amp;.active]:text-zinc-400" title="Contact" href="/contact">Contact</a></li><li class="lg:pr-2"><a class="text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&amp;.active]:text-black/90 dark:[&amp;.active]:text-zinc-400" title="Paivacy" href="/privacy">Privacy</a></li></ul></div></div></nav></div><div class="container mx-auto xs:max-w-full lg:max-w-7xl"><div class="grid grid-rows-1 grid-cols-4 grid-flow-row gap-4"><main class="lg:col-span-3 col-span-4 p-4"><article class="prose prose-slate max-w-none px-4 py-6 divide-y"><h1>CS:GO Autoexec: How to Create CFG File - Hellcase Blog</h1><div><p>
+ Counter-Strike:Global Offensive is considered one of the most detailed shooters in terms of mechanics and physics. It has quite a few options that allow the player to customize the game for themselves. This article will focus on the config and Autoexec files. We will tell you what these files are for, how they differ, and how to edit them.
+</p>
+<div id="ez-toc-container">
+<div>
+<p>
+   In article you will find:
+  </p>
+<span>
+</span>
+</div>
+<nav>
+<ul>
+<li>
+<a href="#What_Is_A_CS_GO_Config_and_Autoexec" title="What Is A CS:GO Config and Autoexec?">
+     What Is A CS:GO Config and Autoexec?
+    </a>
+</li>
+<li>
+<a href="#How_to_Make_an_Autoexec_for_CS_GO" title="How to Make an Autoexec for CS:GO?">
+     How to Make an Autoexec for CS:GO?
+    </a>
+</li>
+<li>
+<a href="#How_to_Run_Autoexec_in_CS_GO" title="How to Run Autoexec in CS:GO">
+     How to Run Autoexec in CS:GO
+    </a>
+</li>
+<li>
+<a href="#What_To_Do_If_Your_Autoexec_Wont_Load_On_Startup" title="What To Do If Your Autoexec Won’t Load On Startup?">
+     What To Do If Your Autoexec Won’t Load On Startup?
+    </a>
+</li>
+<li>
+<a href="#How_to_Edit_CFG_Files" title="How to Edit CFG Files?">
+     How to Edit CFG Files?
+    </a>
+</li>
+<li>
+<a href="#How_To_Activate_And_Open_The_Console_In_CS_GO" title="How To Activate And Open The Console In CS:GO">
+     How To Activate And Open The Console In CS:GO
+    </a>
+</li>
+<li>
+<a href="#Viewmodel_Config_in_CS_GO" title="Viewmodel Config in CS:GO">
+     Viewmodel Config in CS:GO
+    </a>
+</li>
+<li>
+<a href="#Radar_Config_in_CS_GO" title="Radar Config in CS:GO">
+     Radar Config in CS:GO
+    </a>
+</li>
+<li>
+<a href="#How_to_Set_Up_Pro_players_Config_in_CS_GO" title="How to Set Up Pro player’s Config in CS:GO">
+     How to Set Up Pro player’s Config in CS:GO
+    </a>
+</li>
+<li>
+<a href="#To_Wrap_Up" title="To Wrap Up!">
+     To Wrap Up!
+    </a>
+</li>
+</ul>
+</nav>
+</div>
+<h3>
+<span id="What_Is_A_CS_GO_Config_and_Autoexec">
+</span>
+ What Is A CS:GO Config and Autoexec?
+ <span>
+</span>
+</h3>
+<p>
+ Config (or cfg) is the root configuration file of the game, which is located directly in the folder with the game itself. That is, it’s a collection of all current game settings in one file. Your CS:GO config can be replaced with the configs of other players, such as professional players. Thus, by replacing files, you can change all the main settings of the game in one click.
+</p>
+<p>
+ When you run the game, the system will automatically apply the default settings from config.cfg. In any case, you will have the ability to customize the game as you want. You can add your custom commands to config.cfg. But the problem is that, if you want to go back to the default settings, you won’t be able to because you changed them in the file used for the default settings.
+</p>
+<p>
+ And here, autoexec.cfg comes to the rescue. Having created autoexec.cfg, you still have config.cfg. Each time you start the game, your custom settings are launched. If you want to return to the default ones, they are always in your hand.
+</p>
+<p>
+ Since that is resolved, the next question is how to create an Autoexec file.
+</p>
+<h3>
+<span id="How_to_Make_an_Autoexec_for_CS_GO">
+</span>
+ How to Make an Autoexec for CS:GO?
+ <span>
+</span>
+</h3>
+<p>
+ Create the text document in the game config folder at Program Files (or Local Disc C:) \ Steam \ userdata \ “your Steam ID” \ 730 \ local \ cfg. Open your config.cfg file and copy its contents. Paste all copied text into a recently created file, save it, and rename the file type from autoexec.txt to autoexec.cfg. You have done most of the work. Now, the only thing remaining is to run this file.
+</p>
+<h3>
+<span id="How_to_Run_Autoexec_in_CS_GO">
+</span>
+ How to Run Autoexec in CS:GO
+ <span>
+</span>
+</h3>
+<p>
+ In order for your autoexec file to start working, it must be placed in the game folder. For your convenience, we recommend moving it to the cfg folder.
+</p>
+<p>
+ By default, its location: Program Files (or Local Disc C:) \ Steam \ userdata \ “your Steam ID” \ 730 \ local \ cfg
+</p>
+<p>
+ Don’t know your Steam ID? To find it, you
+ 
+  need to open Steam
+ 
+ and go to your inventory. Then click on Trade Offers.
+</p>
+<div>
+<figure>
+<img alt="how to run autoexec in csgo" decoding="async" src="https://s.4tr.cc/TjaO2MC5.png">
+</figure>
+</div>
+<p>
+ Next, click on the button: Who can send me Trade Offers? Scroll down to the “Third-Party Sites” section. The numbers after partner=….. are your Steam ID.
+</p>
+<div>
+<figure>
+<img alt="csgo config file" decoding="async" src="https://s.4tr.cc/fOEM1GY7.png">
+</figure>
+</div>
+<p>
+ If you did everything right, there shouldn’t be any problems.
+</p>
+<h2>
+<span id="What_To_Do_If_Your_Autoexec_Wont_Load_On_Startup">
+</span>
+ What To Do If Your Autoexec Won’t Load On Startup?
+ <span>
+</span>
+</h2>
+<p>
+ First, check if the file name and its type are correct (should be autoexec.сfg). Then check the path where you inserted this file. If everything is OK, and you have made sure that this is not the problem, then do the following:
+</p>
+<p>
+ Open Steam, press the right mouse button on the CS:GO icon and choose “Properties…” Then find the “Launch Option” section and type +exec autoexec.cfg.
+</p>
+<div>
+<figure>
+<img alt="what to do if your autoexec won’t load on startup" decoding="async" src="https://s.4tr.cc/kGmpydtg.png">
+</figure>
+</div>
+<p>
+ Now, when you start the game, this command will automatically run your autoexec.
+</p>
+<h3>
+<span id="How_to_Edit_CFG_Files">
+</span>
+ How to Edit CFG Files?
+ <span>
+</span>
+</h3>
+<p>
+ Editing a cfg file is quite simple. Go to Program Files (or Local Disc C:)\Steam\userdata\”your Steam ID”\730\local\cfg. Find the config.cfg file, rename it to config.txt, open it, and change the settings you need. But be extremely careful when editing and changing only the parameter value. If you change the command itself, you may experience certain problems during the game.
+</p>
+<p>
+ You can also add some commands through the console, and they will be automatically written to your config. For example, commands to improve the sound are:
+</p>
+<ul>
+<li>
+<strong>
+   snd_mixahead 0.05
+  </strong>
+</li>
+<li>
+<strong>
+   snd_headphone_pan_exponent 1.9
+  </strong>
+</li>
+<li>
+<strong>
+   snd_front_headphone_position 45.0
+  </strong>
+</li>
+<li>
+<strong>
+   snd_rear_headphone_position 135.0
+  </strong>
+</li>
+</ul>
+<p>
+ If you do not know how to open the console in the game, no worries, we have it covered up next.
+</p>
+<h3>
+<span id="How_To_Activate_And_Open_The_Console_In_CS_GO">
+</span>
+ How To Activate And Open The Console In CS:GO
+ <span>
+</span>
+</h3>
+<p>
+ In older versions of CS:GO, this was a fairly common question, and its solution was very inconvenient and incomprehensible for inexperienced users. Now, the developers have greatly simplified this procedure. All you need to do is go to the game settings, select the “Game” tab, and in the “Enable Developer Console” option, select “Yes”.
+</p>
+<div>
+<figure>
+<img alt="open the console in csgo" decoding="async" src="https://s.4tr.cc/qiM6lhLn.jpeg">
+</figure>
+</div>
+<p>
+ Now you can open the console with the “~” key by default. You can change it by going into the game’s settings, selecting the “Keyboard/Mouse” tab, then selecting the “UI Keys” sub-tab, finding the “Toggle Console” option, and setting the key you want.
+</p>
+<div>
+<figure>
+<img alt="key in autoexec" decoding="async" src="https://s.4tr.cc/9iugqMXh.jpeg">
+</figure>
+</div>
+<p>
+ Now you can use the console. Through it, parameters are set that are absent in the game settings menu, for example, viewmodel settings.
+</p>
+<h3>
+<span id="Viewmodel_Config_in_CS_GO">
+</span>
+ Viewmodel Config in CS:GO
+ <span>
+</span>
+</h3>
+<p>
+ This is a type of command that changes the position of the hands in CS:GO. They can be entered through the console or directly searched in the config.cfg file and changed their values.
+</p>
+<ul>
+<li>
+<strong>
+   cl_righthand 0
+  </strong>
+  – weapon in the left hand
+ </li>
+<li>
+<strong>
+   cl_righthand 1
+  </strong>
+  – weapon in the right hand (default)
+ </li>
+<li>
+<strong>
+   viewmodel_offset_x {value}
+  </strong>
+  – position along the X axis (left / right). Available values range from 2 to -2
+ </li>
+<li>
+<strong>
+   viewmodel_offset_y {value}
+  </strong>
+  – position along the Y axis (top / bottom). Available values range from 2 to -2
+ </li>
+<li>
+<strong>
+   viewmodel_offset_z {value}
+  </strong>
+  – position along the Z axis, which looks like top/bottom position in game. Available values range from 2 to -2
+ </li>
+<li>
+<strong>
+   viewmodel_fov {value}
+  </strong>
+  – Additional console command to adjust the length of the arms. Available values range from 54 to 68
+ </li>
+</ul>
+<p>
+ Play around with the values of these parameters and set the best for yourself.
+</p>
+<p>
+ Also, a useful сonfiguration that you cannot do in the game settings menu is the
+ <strong>
+<a href="https://www.4tmr.com/r/XnabMPWX" target="_blank">
+   radar settings
+  </a>
+</strong>
+ .
+</p>
+<h3>
+<span id="Radar_Config_in_CS_GO">
+</span>
+ Radar Config in CS:GO
+ <span>
+</span>
+</h3>
+<p>
+ Radar is your main source of information. It must be simple and convenient. The shorter delay in gaining information, the higher the speed of decision-making in the game. It directly affects your impact in the round. These commands will help you achieve maximum efficiency and reduce the influence of the human factor on the game.
+</p>
+<ul>
+<li>
+<strong>
+   cl_radar_rotate 0
+  </strong>
+  – static radar
+ </li>
+<li>
+<strong>
+   cl_radar_rotate 1
+  </strong>
+  – dynamic radar
+ </li>
+<li>
+<strong>
+   cl_hud_radar_scale
+  </strong>
+<strong>
+   {value}
+  </strong>
+  – radar size. Available values range from 0.8 to 1.3
+ </li>
+<li>
+<strong>
+   cl_radar_icon_scale_min
+  </strong>
+<strong>
+   {value}
+  </strong>
+  – icons size on radar. Available values range from 0.4 to 1.0
+ </li>
+<li>
+<strong>
+   cl_radar_always_centered 0
+  </strong>
+  – center of the radar, relative to the map
+ </li>
+<li>
+<strong>
+   cl_radar_always_centered 1
+  </strong>
+  – center of the radar, relative to the player
+ </li>
+<li>
+<strong>
+   cl_radar_scale
+  </strong>
+<strong>
+   {value}
+  </strong>
+  – the size of the displayed part of the map on the radar. Available values range from 0.25 to 1.0
+ </li>
+</ul>
+<p>
+ All these settings are optimal, and we recommend you use them. Remember that you can always adjust them for yourself.
+</p>
+<p>
+ If you are having difficulty setting up and cannot understand whether these changes have benefited you, try the pro player config.
+</p>
+<h3>
+<span id="How_to_Set_Up_Pro_players_Config_in_CS_GO">
+</span>
+ How to Set Up Pro player’s Config in CS:GO
+ <span>
+</span>
+</h3>
+<p>
+ First, create an autoexec file into which you copy your old config, as we described earlier. Then download the config of your favorite pro player, replace our config with the downloaded one, and you’re done.
+</p>
+<p>
+ Here are the configs of several well-known professional players:
+</p>
+<ul>
+<li>
+
+   s1mple CS:GO config
+  
+</li>
+<li>
+  XANTARES CS:GO config
+ </li>
+<li>
+  b1t CS:GO config
+ </li>
+<li>
+  NiKo CS:GO config
+ </li>
+<li>
+
+   m0NESY CS:GO config
+  
+</li>
+<li>
+  ZywOo CS:GO config
+ </li>
+<li>
+  ropz CS:GO config
+ </li>
+</ul>
+<p>
+ If, after enabling the game, you still have the old config, check the game launch options. If there is a +exec autoexec.cfg command, delete it, and restart the game.
+</p>
+<h3>
+<span id="To_Wrap_Up">
+</span>
+ To Wrap Up!
+ <span>
+</span>
+</h3>
+<p>
+ Now, in the case when you buy a new PC or want to play on a friend’s computer, you can set your settings in a couple of clicks using config.cfg and autoexec.cfg. In this case, the original settings will also be saved.
+</p>
+<p>
+ If you find this article informative, we advise you to
+ <a href="https://www.4tmr.com/r/XnabMPWX" target="_blank">
+  visit our blog
+ </a>
+ . There you will find a lot of useful and interesting information about the world of CS:GO. Good luck!
+</p>
+</div></article></main><div class="lg:col-span-1 lg:block hidden p-4"><div class="flex justify-center sticky top-20 w-full transition ease-in-out hover:-translate-y-1"><div class="block max-w-sm bg-white text-center shadow-lg dark:bg-neutral-700 w-full"><div class="border-b-2 bg-black border-neutral-100 py-3 px-6 dark:border-neutral-600 dark:text-neutral-50"><img alt="Hellcase.com - CS:GO Cases you should try! | Best drop in custom created cases" loading="lazy" width="120" height="60" decoding="async" data-nimg="1" class="mx-auto my-4" style="color:transparent" src="https://s.4tr.cc/j8RqaCPi"/></div><div class="p-6"><h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">Hellcase<!-- --> Bonus</h5><p class="text-base text-neutral-600 dark:text-neutral-200">$0.70 for Free, +10% to balance refill, Daily CS:GO Random Item, Balance, War Tags</p></div><div class="border-t-2 border-neutral-100 py-3 px-6 dark:border-neutral-600 dark:text-neutral-50"><a type="button" class="inline-block text-white rounded bg-sky-500 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none hover:bg-sky-700 focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]" data-te-ripple-init="true" data-te-ripple-color="light" target="_blank" href="https://r.4tr.cc/XnabMPWX">Active Now</a></div></div></div></div></div></div></div><script id="__NEXT_DATA__" type="application/json" crossorigin="">{"props":{"pageProps":{"post":{"title":"CS:GO Autoexec: How to Create CFG File - Hellcase Blog","excerpt":"Counter-Strike:Global Offensive is considered one of the most detailed shooters in terms of mechanics and physics. It has quite a few options that allow the player to customize the game for themselves. This article will focus on the config and Autoex","content_html":"\u003cp\u003e\n Counter-Strike:Global Offensive is considered one of the most detailed shooters in terms of mechanics and physics. It has quite a few options that allow the player to customize the game for themselves. This article will focus on the config and Autoexec files. We will tell you what these files are for, how they differ, and how to edit them.\n\u003c/p\u003e\n\u003cdiv id=\"ez-toc-container\"\u003e\n\u003cdiv\u003e\n\u003cp\u003e\n   In article you will find:\n  \u003c/p\u003e\n\u003cspan\u003e\n\u003c/span\u003e\n\u003c/div\u003e\n\u003cnav\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003ca href=\"#What_Is_A_CS_GO_Config_and_Autoexec\" title=\"What Is A CS:GO Config and Autoexec?\"\u003e\n     What Is A CS:GO Config and Autoexec?\n    \u003c/a\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003ca href=\"#How_to_Make_an_Autoexec_for_CS_GO\" title=\"How to Make an Autoexec for CS:GO?\"\u003e\n     How to Make an Autoexec for CS:GO?\n    \u003c/a\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003ca href=\"#How_to_Run_Autoexec_in_CS_GO\" title=\"How to Run Autoexec in CS:GO\"\u003e\n     How to Run Autoexec in CS:GO\n    \u003c/a\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003ca href=\"#What_To_Do_If_Your_Autoexec_Wont_Load_On_Startup\" title=\"What To Do If Your Autoexec Won’t Load On Startup?\"\u003e\n     What To Do If Your Autoexec Won’t Load On Startup?\n    \u003c/a\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003ca href=\"#How_to_Edit_CFG_Files\" title=\"How to Edit CFG Files?\"\u003e\n     How to Edit CFG Files?\n    \u003c/a\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003ca href=\"#How_To_Activate_And_Open_The_Console_In_CS_GO\" title=\"How To Activate And Open The Console In CS:GO\"\u003e\n     How To Activate And Open The Console In CS:GO\n    \u003c/a\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003ca href=\"#Viewmodel_Config_in_CS_GO\" title=\"Viewmodel Config in CS:GO\"\u003e\n     Viewmodel Config in CS:GO\n    \u003c/a\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003ca href=\"#Radar_Config_in_CS_GO\" title=\"Radar Config in CS:GO\"\u003e\n     Radar Config in CS:GO\n    \u003c/a\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003ca href=\"#How_to_Set_Up_Pro_players_Config_in_CS_GO\" title=\"How to Set Up Pro player’s Config in CS:GO\"\u003e\n     How to Set Up Pro player’s Config in CS:GO\n    \u003c/a\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003ca href=\"#To_Wrap_Up\" title=\"To Wrap Up!\"\u003e\n     To Wrap Up!\n    \u003c/a\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/nav\u003e\n\u003c/div\u003e\n\u003ch3\u003e\n\u003cspan id=\"What_Is_A_CS_GO_Config_and_Autoexec\"\u003e\n\u003c/span\u003e\n What Is A CS:GO Config and Autoexec?\n \u003cspan\u003e\n\u003c/span\u003e\n\u003c/h3\u003e\n\u003cp\u003e\n Config (or cfg) is the root configuration file of the game, which is located directly in the folder with the game itself. That is, it’s a collection of all current game settings in one file. Your CS:GO config can be replaced with the configs of other players, such as professional players. Thus, by replacing files, you can change all the main settings of the game in one click.\n\u003c/p\u003e\n\u003cp\u003e\n When you run the game, the system will automatically apply the default settings from config.cfg. In any case, you will have the ability to customize the game as you want. You can add your custom commands to config.cfg. But the problem is that, if you want to go back to the default settings, you won’t be able to because you changed them in the file used for the default settings.\n\u003c/p\u003e\n\u003cp\u003e\n And here, autoexec.cfg comes to the rescue. Having created autoexec.cfg, you still have config.cfg. Each time you start the game, your custom settings are launched. If you want to return to the default ones, they are always in your hand.\n\u003c/p\u003e\n\u003cp\u003e\n Since that is resolved, the next question is how to create an Autoexec file.\n\u003c/p\u003e\n\u003ch3\u003e\n\u003cspan id=\"How_to_Make_an_Autoexec_for_CS_GO\"\u003e\n\u003c/span\u003e\n How to Make an Autoexec for CS:GO?\n \u003cspan\u003e\n\u003c/span\u003e\n\u003c/h3\u003e\n\u003cp\u003e\n Create the text document in the game config folder at Program Files (or Local Disc C:) \\ Steam \\ userdata \\ “your Steam ID” \\ 730 \\ local \\ cfg. Open your config.cfg file and copy its contents. Paste all copied text into a recently created file, save it, and rename the file type from autoexec.txt to autoexec.cfg. You have done most of the work. Now, the only thing remaining is to run this file.\n\u003c/p\u003e\n\u003ch3\u003e\n\u003cspan id=\"How_to_Run_Autoexec_in_CS_GO\"\u003e\n\u003c/span\u003e\n How to Run Autoexec in CS:GO\n \u003cspan\u003e\n\u003c/span\u003e\n\u003c/h3\u003e\n\u003cp\u003e\n In order for your autoexec file to start working, it must be placed in the game folder. For your convenience, we recommend moving it to the cfg folder.\n\u003c/p\u003e\n\u003cp\u003e\n By default, its location: Program Files (or Local Disc C:) \\ Steam \\ userdata \\ “your Steam ID” \\ 730 \\ local \\ cfg\n\u003c/p\u003e\n\u003cp\u003e\n Don’t know your Steam ID? To find it, you\n \n  need to open Steam\n \n and go to your inventory. Then click on Trade Offers.\n\u003c/p\u003e\n\u003cdiv\u003e\n\u003cfigure\u003e\n\u003cimg alt=\"how to run autoexec in csgo\" decoding=\"async\" src=\"https://s.4tr.cc/TjaO2MC5.png\"\u003e\n\u003c/figure\u003e\n\u003c/div\u003e\n\u003cp\u003e\n Next, click on the button: Who can send me Trade Offers? Scroll down to the “Third-Party Sites” section. The numbers after partner=….. are your Steam ID.\n\u003c/p\u003e\n\u003cdiv\u003e\n\u003cfigure\u003e\n\u003cimg alt=\"csgo config file\" decoding=\"async\" src=\"https://s.4tr.cc/fOEM1GY7.png\"\u003e\n\u003c/figure\u003e\n\u003c/div\u003e\n\u003cp\u003e\n If you did everything right, there shouldn’t be any problems.\n\u003c/p\u003e\n\u003ch2\u003e\n\u003cspan id=\"What_To_Do_If_Your_Autoexec_Wont_Load_On_Startup\"\u003e\n\u003c/span\u003e\n What To Do If Your Autoexec Won’t Load On Startup?\n \u003cspan\u003e\n\u003c/span\u003e\n\u003c/h2\u003e\n\u003cp\u003e\n First, check if the file name and its type are correct (should be autoexec.сfg). Then check the path where you inserted this file. If everything is OK, and you have made sure that this is not the problem, then do the following:\n\u003c/p\u003e\n\u003cp\u003e\n Open Steam, press the right mouse button on the CS:GO icon and choose “Properties…” Then find the “Launch Option” section and type +exec autoexec.cfg.\n\u003c/p\u003e\n\u003cdiv\u003e\n\u003cfigure\u003e\n\u003cimg alt=\"what to do if your autoexec won’t load on startup\" decoding=\"async\" src=\"https://s.4tr.cc/kGmpydtg.png\"\u003e\n\u003c/figure\u003e\n\u003c/div\u003e\n\u003cp\u003e\n Now, when you start the game, this command will automatically run your autoexec.\n\u003c/p\u003e\n\u003ch3\u003e\n\u003cspan id=\"How_to_Edit_CFG_Files\"\u003e\n\u003c/span\u003e\n How to Edit CFG Files?\n \u003cspan\u003e\n\u003c/span\u003e\n\u003c/h3\u003e\n\u003cp\u003e\n Editing a cfg file is quite simple. Go to Program Files (or Local Disc C:)\\Steam\\userdata\\”your Steam ID”\\730\\local\\cfg. Find the config.cfg file, rename it to config.txt, open it, and change the settings you need. But be extremely careful when editing and changing only the parameter value. If you change the command itself, you may experience certain problems during the game.\n\u003c/p\u003e\n\u003cp\u003e\n You can also add some commands through the console, and they will be automatically written to your config. For example, commands to improve the sound are:\n\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e\n   snd_mixahead 0.05\n  \u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e\n   snd_headphone_pan_exponent 1.9\n  \u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e\n   snd_front_headphone_position 45.0\n  \u003c/strong\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e\n   snd_rear_headphone_position 135.0\n  \u003c/strong\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\n If you do not know how to open the console in the game, no worries, we have it covered up next.\n\u003c/p\u003e\n\u003ch3\u003e\n\u003cspan id=\"How_To_Activate_And_Open_The_Console_In_CS_GO\"\u003e\n\u003c/span\u003e\n How To Activate And Open The Console In CS:GO\n \u003cspan\u003e\n\u003c/span\u003e\n\u003c/h3\u003e\n\u003cp\u003e\n In older versions of CS:GO, this was a fairly common question, and its solution was very inconvenient and incomprehensible for inexperienced users. Now, the developers have greatly simplified this procedure. All you need to do is go to the game settings, select the “Game” tab, and in the “Enable Developer Console” option, select “Yes”.\n\u003c/p\u003e\n\u003cdiv\u003e\n\u003cfigure\u003e\n\u003cimg alt=\"open the console in csgo\" decoding=\"async\" src=\"https://s.4tr.cc/qiM6lhLn.jpeg\"\u003e\n\u003c/figure\u003e\n\u003c/div\u003e\n\u003cp\u003e\n Now you can open the console with the “~” key by default. You can change it by going into the game’s settings, selecting the “Keyboard/Mouse” tab, then selecting the “UI Keys” sub-tab, finding the “Toggle Console” option, and setting the key you want.\n\u003c/p\u003e\n\u003cdiv\u003e\n\u003cfigure\u003e\n\u003cimg alt=\"key in autoexec\" decoding=\"async\" src=\"https://s.4tr.cc/9iugqMXh.jpeg\"\u003e\n\u003c/figure\u003e\n\u003c/div\u003e\n\u003cp\u003e\n Now you can use the console. Through it, parameters are set that are absent in the game settings menu, for example, viewmodel settings.\n\u003c/p\u003e\n\u003ch3\u003e\n\u003cspan id=\"Viewmodel_Config_in_CS_GO\"\u003e\n\u003c/span\u003e\n Viewmodel Config in CS:GO\n \u003cspan\u003e\n\u003c/span\u003e\n\u003c/h3\u003e\n\u003cp\u003e\n This is a type of command that changes the position of the hands in CS:GO. They can be entered through the console or directly searched in the config.cfg file and changed their values.\n\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e\n   cl_righthand 0\n  \u003c/strong\u003e\n  – weapon in the left hand\n \u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e\n   cl_righthand 1\n  \u003c/strong\u003e\n  – weapon in the right hand (default)\n \u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e\n   viewmodel_offset_x {value}\n  \u003c/strong\u003e\n  – position along the X axis (left / right). Available values range from 2 to -2\n \u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e\n   viewmodel_offset_y {value}\n  \u003c/strong\u003e\n  – position along the Y axis (top / bottom). Available values range from 2 to -2\n \u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e\n   viewmodel_offset_z {value}\n  \u003c/strong\u003e\n  – position along the Z axis, which looks like top/bottom position in game. Available values range from 2 to -2\n \u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e\n   viewmodel_fov {value}\n  \u003c/strong\u003e\n  – Additional console command to adjust the length of the arms. Available values range from 54 to 68\n \u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\n Play around with the values of these parameters and set the best for yourself.\n\u003c/p\u003e\n\u003cp\u003e\n Also, a useful сonfiguration that you cannot do in the game settings menu is the\n \u003cstrong\u003e\n\u003ca href=\"https://www.4tmr.com/r/XnabMPWX\" target=\"_blank\"\u003e\n   radar settings\n  \u003c/a\u003e\n\u003c/strong\u003e\n .\n\u003c/p\u003e\n\u003ch3\u003e\n\u003cspan id=\"Radar_Config_in_CS_GO\"\u003e\n\u003c/span\u003e\n Radar Config in CS:GO\n \u003cspan\u003e\n\u003c/span\u003e\n\u003c/h3\u003e\n\u003cp\u003e\n Radar is your main source of information. It must be simple and convenient. The shorter delay in gaining information, the higher the speed of decision-making in the game. It directly affects your impact in the round. These commands will help you achieve maximum efficiency and reduce the influence of the human factor on the game.\n\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003e\n   cl_radar_rotate 0\n  \u003c/strong\u003e\n  – static radar\n \u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e\n   cl_radar_rotate 1\n  \u003c/strong\u003e\n  – dynamic radar\n \u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e\n   cl_hud_radar_scale\n  \u003c/strong\u003e\n\u003cstrong\u003e\n   {value}\n  \u003c/strong\u003e\n  – radar size. Available values range from 0.8 to 1.3\n \u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e\n   cl_radar_icon_scale_min\n  \u003c/strong\u003e\n\u003cstrong\u003e\n   {value}\n  \u003c/strong\u003e\n  – icons size on radar. Available values range from 0.4 to 1.0\n \u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e\n   cl_radar_always_centered 0\n  \u003c/strong\u003e\n  – center of the radar, relative to the map\n \u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e\n   cl_radar_always_centered 1\n  \u003c/strong\u003e\n  – center of the radar, relative to the player\n \u003c/li\u003e\n\u003cli\u003e\n\u003cstrong\u003e\n   cl_radar_scale\n  \u003c/strong\u003e\n\u003cstrong\u003e\n   {value}\n  \u003c/strong\u003e\n  – the size of the displayed part of the map on the radar. Available values range from 0.25 to 1.0\n \u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\n All these settings are optimal, and we recommend you use them. Remember that you can always adjust them for yourself.\n\u003c/p\u003e\n\u003cp\u003e\n If you are having difficulty setting up and cannot understand whether these changes have benefited you, try the pro player config.\n\u003c/p\u003e\n\u003ch3\u003e\n\u003cspan id=\"How_to_Set_Up_Pro_players_Config_in_CS_GO\"\u003e\n\u003c/span\u003e\n How to Set Up Pro player’s Config in CS:GO\n \u003cspan\u003e\n\u003c/span\u003e\n\u003c/h3\u003e\n\u003cp\u003e\n First, create an autoexec file into which you copy your old config, as we described earlier. Then download the config of your favorite pro player, replace our config with the downloaded one, and you’re done.\n\u003c/p\u003e\n\u003cp\u003e\n Here are the configs of several well-known professional players:\n\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\n   s1mple CS:GO config\n  \n\u003c/li\u003e\n\u003cli\u003e\n  XANTARES CS:GO config\n \u003c/li\u003e\n\u003cli\u003e\n  b1t CS:GO config\n \u003c/li\u003e\n\u003cli\u003e\n  NiKo CS:GO config\n \u003c/li\u003e\n\u003cli\u003e\n\n   m0NESY CS:GO config\n  \n\u003c/li\u003e\n\u003cli\u003e\n  ZywOo CS:GO config\n \u003c/li\u003e\n\u003cli\u003e\n  ropz CS:GO config\n \u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\n If, after enabling the game, you still have the old config, check the game launch options. If there is a +exec autoexec.cfg command, delete it, and restart the game.\n\u003c/p\u003e\n\u003ch3\u003e\n\u003cspan id=\"To_Wrap_Up\"\u003e\n\u003c/span\u003e\n To Wrap Up!\n \u003cspan\u003e\n\u003c/span\u003e\n\u003c/h3\u003e\n\u003cp\u003e\n Now, in the case when you buy a new PC or want to play on a friend’s computer, you can set your settings in a couple of clicks using config.cfg and autoexec.cfg. In this case, the original settings will also be saved.\n\u003c/p\u003e\n\u003cp\u003e\n If you find this article informative, we advise you to\n \u003ca href=\"https://www.4tmr.com/r/XnabMPWX\" target=\"_blank\"\u003e\n  visit our blog\n \u003c/a\u003e\n . There you will find a lot of useful and interesting information about the world of CS:GO. Good luck!\n\u003c/p\u003e\n"}},"mail":{"address":"dota2sites@gmail.com"},"site":{"short_name":"Hellcase","name":"Hellcase.com - CS:GO Cases you should try! | Best drop in custom created cases","description":"Hellcase Promo/Referral Codes, best csgo case opening site hellcase","avatar":"j8RqaCPi","promos":[{"code":"orksgaming","bonus":"$0.70 for Free, +10% to balance refill, Daily CS:GO Random Item, Balance, War Tags","uid":"XnabMPWX"}]},"navis":[{"name":"Home","title":"Home page","url":"/","order":0},{"name":"Contact","title":"Contact","url":"/contact","order":0},{"name":"Privacy","title":"Paivacy","url":"/privacy","order":0}],"__N_SSG":true},"page":"/[uri]","query":{"uri":"csgo-config-autoexec-guide"},"buildId":"DNTyj3mo_aArktfODZZeM","runtimeConfig":{"DEBUG":true,"SUPABASE_URL":"https://fpeznsyqucyttraodkph.supabase.co","SUPABASE_ANON_KEY":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZwZXpuc3lxdWN5dHRyYW9ka3BoIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzY1MzM4NzYsImV4cCI6MTk5MjEwOTg3Nn0.lErwwVPJqglwOYimTy42D86tByCFRMO1zM2iAEHXNNU","DOMAIN":"hellcase.4tmr.com","SITE_UID":"XnabMPWX","IMAGE_CDN":"https://s.4tr.cc","REDIRECT_URL":"https://r.4tr.cc","PAGE_SIZE":10},"isFallback":false,"gsp":true,"appGip":true,"scriptLoader":[]}</script></body></html>
